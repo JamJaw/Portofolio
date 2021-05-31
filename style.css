@@ -1,0 +1,135 @@
+body{
+    font-family:"Noto Sans JP","sans-serif";
+    margin:0;
+    min-width:1076px;
+}
+.color-green{
+    color:#00ABAE;
+}
+.sub-title{
+    font-size:32px;
+}
+
+/*
+ * [headerタグ]のスタイルシート
+ */
+
+ .block-header{
+    margin: 10px 0;
+    padding: 0 20px 10px;
+    box-shadow: 0 10px 10px -5px rgb(204,204,204,0.3);
+}
+.block-header a{
+    font-size:40px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+/*
+ * [main]のスタイルシート
+ */
+
+ .block-main{
+     text-align: center;
+     margin:100px 0;
+ }
+ 
+ /*
+  * [profile]のスタイルシート
+  */
+  
+  .item-list{
+      width:100%;
+      max-width:360px;
+      margin:0 auto;
+  }
+  .item-list img{
+      width:50%;
+      display:block;
+      margin:auto;
+  }
+  .item-list b{
+      display:block;
+      font-size:24px;
+      font-weight:normal;
+      margin:20px 0 30px;
+  }
+  .item-list p{
+      font-size:15px;
+      line-height: normal;
+      text-align: left;
+  }
+  .icon-list{
+      list-style: none;
+      width:100%;
+      margin:auto;
+      padding:0;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .icon-list li{
+      margin-right:22px;
+  }
+  .icon-list li:last-child{
+      margin-right:0;
+  }
+
+  /*
+   * [works]のスタイルシート
+   */
+   .box-works{
+       margin-top:80px;
+   }
+   .works-list{
+       list-style:none;
+       width:100%;
+       max-width:1106px;
+       margin:30px auto;
+       text-align: left;
+       overflow: hidden;
+   }
+   .works-list li{
+       display:block;
+       width:100%;
+       max-width:348px;
+       float:left;
+       margin-right:15px;
+   }
+   .works-list li:last-child{
+       margin-right:0px;
+   }
+   .works-list li img{
+       width:100%;
+   }
+   .works-list li h3{
+       font-size:24px;
+       margin:10px 0;
+   }
+   .works-list li span{
+       font-size:18px;
+   }
+   .works-list li .link{
+       display:flex;
+       justify-content: left;
+       align-items: left;
+       margin-top:15px;       
+   }
+   .works-list li .link a{
+       background-color:rgb(226,226,226);
+       padding:5px 20px;
+       margin-right:10px;
+       font-size:15px;
+       text-decoration: none;
+       color:black;
+   }
+   /*
+    * [footer]のスタイルシート
+    */
+    .block-footer p{
+        clear:both;
+        font-size:15px;
+        text-align: center;
+        margin:50px 0 20px;
+    }
