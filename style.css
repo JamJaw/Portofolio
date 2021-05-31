@@ -1,7 +1,7 @@
 body{
     font-family:"Noto Sans JP","sans-serif";
-    margin:0;
-    min-width:1076px;
+    margin:0; 
+    width:100%;
 }
 .color-green{
     color:#00ABAE;
@@ -39,66 +39,64 @@ body{
   * [profile]のスタイルシート
   */
   
-  .item-list{
-      width:100%;
-      max-width:360px;
-      margin:0 auto;
-  }
-  .item-list img{
-      width:50%;
-      display:block;
-      margin:auto;
-  }
-  .item-list b{
-      display:block;
-      font-size:24px;
-      font-weight:normal;
-      margin:20px 0 30px;
-  }
-  .item-list p{
-      font-size:15px;
-      line-height: normal;
-      text-align: left;
-  }
-  .icon-list{
-      list-style: none;
-      width:100%;
-      margin:auto;
-      padding:0;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .icon-list li{
-      margin-right:22px;
-  }
-  .icon-list li:last-child{
-      margin-right:0;
-  }
+.item-list{
+    width:100%;
+    max-width:360px;
+    margin:0 auto;
+}
+.item-list img{
+    width:50%;
+    display:block;
+    margin:auto;
+}
+.item-list b{
+    display:block;
+    font-size:24px;
+    font-weight:normal;
+    margin:20px 0 30px;
+}
+.item-list p{
+    font-size:15px;
+    line-height: normal;
+    text-align: left;
+}
+.icon-list{
+    list-style: none;
+    width:100%;
+    margin:auto;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-list li{
+    margin-right:22px;
+}
+.icon-list li:last-child{
+    margin-right:0;
+}
 
-  /*
-   * [works]のスタイルシート
-   */
-   .box-works{
-       margin-top:80px;
-   }
-   .works-list{
-       list-style:none;
-       width:100%;
-       max-width:1106px;
-       margin:30px auto;
-       text-align: left;
-       overflow: hidden;
+/*
+* [works]のスタイルシート
+*/
+.box-works{
+    margin-top:80px;
+    width:100%;
+}
+.works-list{
+    list-style:none;
+    width:100%;
+    max-width:1106px;
+    margin:30px auto;
+    text-align: left;
+    overflow: hidden;
+    display:flex;
    }
    .works-list li{
        display:block;
        width:100%;
        max-width:348px;
-       float:left;
        margin-right:15px;
-   }
-   .works-list li:last-child{
-       margin-right:0px;
    }
    .works-list li img{
        width:100%;
@@ -114,22 +112,90 @@ body{
        display:flex;
        justify-content: left;
        align-items: left;
+    margin-top:15px;       
        margin-top:15px;       
-   }
-   .works-list li .link a{
-       background-color:rgb(226,226,226);
-       padding:5px 20px;
-       margin-right:10px;
-       font-size:15px;
-       text-decoration: none;
-       color:black;
-   }
+    margin-top:15px;       
+       margin-top:15px;       
+    margin-top:15px;       
+}
+.works-list li .link a{
+    background-color:rgb(226,226,226);
+    padding:5px 20px;
+    margin-right:10px;
+    font-size:15px;
+    text-decoration: none;
+    color:black;
+}
+/*
+* [footer]のスタイルシート
+*/
+.block-footer p{
+    clear:both;
+    font-size:15px;
+    text-align: center;
+    margin:50px 0 20px;
+}
+
+
+
+
+/*
+ * スマホ用のスタイルシート
+ */
+ @media screen and (max-width:767px){
    /*
-    * [footer]のスタイルシート
+    * [headerタグ]のスタイルシート
     */
-    .block-footer p{
-        clear:both;
-        font-size:15px;
-        text-align: center;
-        margin:50px 0 20px;
+
+    .block-header{
+        padding: 0 10px 10px;
+        box-shadow: 0 8px 8px -5px rgb(204,204,204,0.3);
     }
+    .block-header a{
+        font-size:31px;
+    }
+
+    /*
+     * [main]のスタイルシート
+     */
+    .block-main{
+        margin:50px 0;
+    }
+
+    /*
+     * [profile]のスタイルシート
+     */
+    .box-profile{
+        padding: 0 10px;
+    }
+    .item-list b{
+        font-size:18px;
+    }
+    .icon-list li{
+        margin-right:25px;
+    }
+    /*
+     * [works]のスタイルシート
+     */
+    .box-works{
+        margin: 60px 0 0;
+        padding: 0 10px;
+    }
+    .works-list{
+        width:100%;
+        display:block;
+    }
+    .works-list li{
+        width:100%;
+        margin:auto;
+        margin-bottom: 30px;
+    }
+    .works-list h3{
+        font-size:20px;
+        margin: 5px 0;
+    }
+    .works-list span{
+        font-size:14px;
+    }
+
+}
